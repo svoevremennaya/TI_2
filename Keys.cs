@@ -47,6 +47,7 @@ namespace lab_2
             return 0;
         }
 
+        //Finding the primitive root modulo algorithm
         public bool IsPrimitiveRoot(int p, int a)
         {
             if (a == 0 || a == 1)
@@ -92,6 +93,7 @@ namespace lab_2
             return x;
         }
 
+        //Fast exponentiation algorithm
         public int FastExponentiation(BigInteger mod, BigInteger num, BigInteger deg)
         {
             BigInteger y = 1;
@@ -124,7 +126,8 @@ namespace lab_2
             }  
         }
 
-        public int Mul(int a, int b, int n) // a*b mod n - умножение a на b по модулю n
+        //Modulo multiplication
+        public int Mul(int a, int b, int n)
         {
             var sum = 0;
             for (var i = 0; i < b; i++)
