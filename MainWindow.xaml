@@ -1,0 +1,34 @@
+﻿<Window x:Class="lab_2.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:lab_2"
+        mc:Ignorable="d"
+        Title="ELGamal cryptosystem" Height="520" Width="800">
+    <Grid Margin="0,0,3.6,0">
+        <TextBox x:Name="source" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="315" Margin="45,72,0,0" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="keyP" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="315" Margin="45,205,0,0" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="keyG" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="315" IsReadOnly="True" Margin="45,272,0,0" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="keyY" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="315" IsReadOnly="True" Margin="397,272,0,0" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="keyX" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="315" Margin="397,205,0,0" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="cipher" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="315" Margin="398,385,0,0" VerticalContentAlignment="Center"/>
+        <Button x:Name="encrypt" Content="Encrypt" HorizontalAlignment="Right" VerticalAlignment="Top" Width="75" Height="25" Margin="0,147,558,0" Click="encrypt_Click"/>
+        <Button x:Name="decrypt" Content="Decrypt" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Height="25" Margin="511,147,0,0" Click="decrypt_Click"/>
+        <Label Content="Input the source text:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="45,46,0,0"/>
+        <Label Content="The secret key P" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="46,180,0,0"/>
+        <Label Content="The secret key G" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="46,246,0,0"/>
+        <Label Content="The secret key Y" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="397,246,0,0"/>
+        <Label Content="The open key X" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="398,180,0,0"/>
+        <Label Content="The source string:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="398,358,0,0"/>
+        <TextBox x:Name="textB" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="315" Margin="397,100,0,0" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="textA" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="315" Margin="397,37,0,0" VerticalContentAlignment="Center"/>
+        <Label Content="The ciphertext a:" HorizontalAlignment="Left" VerticalAlignment="Top" RenderTransformOrigin="0.635,0.41" Margin="397,11,0,0"/>
+        <Label Content="The ciphertext b:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="398,74,0,0"/>
+        <TextBox x:Name="cipher_a" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="313" Margin="47,349,0,0" VerticalContentAlignment="Center"/>
+        <TextBox x:Name="cipher_b" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="313" Margin="47,415,0,0" VerticalContentAlignment="Center"/>
+        <Label Content="The ciphertext A:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="47,323,0,0"/>
+        <Label Content="The ciphertext B:" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="47,389,0,0"/>
+
+    </Grid>
+</Window>
